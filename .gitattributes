@@ -1,0 +1,3 @@
+# --- Prevent Git from modifying Maya files ---
+*.ma -text
+*.mb -text
