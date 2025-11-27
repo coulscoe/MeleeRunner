@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RoomManager : MonoBehaviour
 {
@@ -10,8 +11,11 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private int roomsAhead;
     [SerializeField] private int roomsBehind;
 
+    [Header("Events")]
+    public UnityEvent onRemoveRoom, onAddRoom;
+
     [Header("Rooms")]
-    private Dictionary<int, RoomBehavior> activeRooms = new Dictionary<int, RoomBehavior>();
+    public Dictionary<int, RoomBehavior> activeRooms = new Dictionary<int, RoomBehavior>();
 
     [Header("Info")]
     public RoomBehavior lastRoom = null;
@@ -48,12 +52,12 @@ public class RoomManager : MonoBehaviour
             {
                 Destroy(room.gameObject);
                 activeRooms.Remove(roomId);
-                RoomBehavior currentFirstRoom = activeRooms[activeRooms.Keys.Min()];
+                RoomBehavior currentFirstRoom = GetFirstRoom();
                 currentFirstRoom.enteranceDoor.Lock();
+                onRemoveRoom.Invoke();
                 Debug.Log("Removed Room: " + roomId);
             }
         }
-
     }
 
     public void removeRooms(int min, int max)
@@ -94,5 +98,15 @@ public class RoomManager : MonoBehaviour
         removeRooms(roomsToDeleteMin, roomsToDeleteMax);
         
     }
+
+    #region Helper Functions
+
+    public RoomBehavior GetFirstRoom()
+    {
+        return activeRooms[activeRooms.Keys.Min()];
+    }
+
+    #endregion
+
 
 }

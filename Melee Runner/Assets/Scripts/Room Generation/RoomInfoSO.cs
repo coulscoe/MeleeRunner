@@ -9,6 +9,7 @@ public class RoomInfoSO : ScriptableObject
 
     [Header("Settings")]
     public float spawnWeight = 1.0f;
+    public float roomTimer = 5f;
     public RoomDirection direction = RoomDirection.Forward;
 }
 
