@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b09ec598725f9349ae24a79f1a35fe4, type: 3}
   m_Name: Hallway1Right_Info
   m_EditorClassIdentifier: Assembly-CSharp::RoomInfoSO
-  roomPrefab: {fileID: 539073916365988882, guid: 26f436f055825594087b970cfabf9e20, type: 3}
+  roomPrefab: {fileID: 908550872136829123, guid: 26f436f055825594087b970cfabf9e20, type: 3}
   boundaryPrefab: {fileID: 5552420531865971453, guid: bae9cebad3a03204691c287e47094e39, type: 3}
   spawnWeight: 50
+  roomTimer: 5
   direction: 1

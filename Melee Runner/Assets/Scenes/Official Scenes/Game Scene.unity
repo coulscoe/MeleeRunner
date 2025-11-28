@@ -1418,6 +1418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120502171}
   - component: {fileID: 1120502172}
+  - component: {fileID: 1120502173}
   m_Layer: 0
   m_Name: RoomManager
   m_TagString: Untagged
@@ -1465,6 +1466,21 @@ MonoBehaviour:
       m_Calls: []
   lastRoom: {fileID: 0}
   playerCurrentRoom: 0
+--- !u!114 &1120502173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120502170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2142d80524c4648afc0d97ed88c688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomTimerBehaviorScript
+  roomManager: {fileID: 1120502172}
+  currentRoomId: -1
+  multiplier: 1
 --- !u!1 &1270388232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,6 +2149,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1120502172}
+        m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
+        m_MethodName: addRooms
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
