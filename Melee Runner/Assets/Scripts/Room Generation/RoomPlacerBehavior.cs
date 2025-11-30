@@ -136,9 +136,9 @@ public class RoomPlacerBehavior : MonoBehaviour
         if (boundaryBox == null) { return false; }
 
         LayerMask layerMask = LayerMask.GetMask("Boundaries");
-        List<GameObject> hits = boundaryBox.getOverlappingObjects(layerMask, "Bounding Box");
+        List<GameObject> hits = boundaryBox.getOverlappingObjects(layerMask, "Boundaries", 0.01f);
 
-        if (hits.Count > 0) { Debug.Log("Hit Boundary"); return false; }
+        if (hits.Count > 0) { Debug.LogWarning("Hit Boundary"); return false; }
 
         return true;
     }

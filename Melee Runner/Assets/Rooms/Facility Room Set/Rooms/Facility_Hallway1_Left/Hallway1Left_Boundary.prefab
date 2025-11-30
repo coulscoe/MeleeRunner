@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4407398327309667634}
   - component: {fileID: 5977605446455419713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Bounding Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,9 +60,9 @@ GameObject:
   - component: {fileID: 2554818663936091277}
   - component: {fileID: 8738673278325298757}
   - component: {fileID: 3491899945964017961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Bounding Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 8633049976606429161}
   m_Layer: 0
   m_Name: Hallway1Left_Boundary
-  m_TagString: Untagged
+  m_TagString: Bounding Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01159f4058d0992418b55b7ee7b7aa3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomBoundaryBehavior
-  BoundaryBox: {fileID: 5977605446455419713}
+  boundaryBox: {fileID: 5977605446455419713}
   enterance: {fileID: 3223263540768119183}
   exit: {fileID: 4306252146506278778}
 --- !u!1001 &3868421351669021704

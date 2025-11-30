@@ -26,15 +26,16 @@ public class BoundaryBoxBehavior : MonoBehaviour
 
 
     // Functions
-    public List<GameObject> getOverlappingObjects(LayerMask? layerMask, string tag)
+    public List<GameObject> getOverlappingObjects(LayerMask? layerMask, string tag, float? padding = null)
     {
-        
+        Vector3 shrink = Vector3.one * (padding ?? 0.00f);
+
         List<GameObject> overlappingObjects = new List<GameObject>();
         foreach (Collider collider in boundaries)
         {
             Collider[] overlaps = Physics.OverlapBox(
                 collider.bounds.center,
-                collider.bounds.extents,
+                collider.bounds.extents - shrink,
                 Quaternion.identity,
                 layerMask ?? Physics.AllLayers
             );
