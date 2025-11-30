@@ -16,5 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fcc687fd428a9bd4b839302d4b430861, type: 2}
   - {fileID: 11400000, guid: 1b4edb8d5cfc02f428ef2ff5ee271077, type: 2}
   - {fileID: 11400000, guid: 3a21358ed06ddf647808124ef36ea249, type: 2}
-  balance: {fileID: 11400000, guid: 3c0927b98b017f84ebe9106c2b6940f5, type: 2}
-  maxBalance: {fileID: 11400000, guid: edabf34ac562d004eb53fdfd44c917c0, type: 2}
+  - {fileID: 11400000, guid: b7f124c74805a1b4dbbe21a694139ef5, type: 2}
