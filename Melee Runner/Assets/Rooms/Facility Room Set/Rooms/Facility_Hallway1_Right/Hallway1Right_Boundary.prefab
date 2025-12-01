@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4407398327309667634}
   - component: {fileID: 5977605446455419713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Bounding Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,9 +60,9 @@ GameObject:
   - component: {fileID: 2554818663936091277}
   - component: {fileID: 8738673278325298757}
   - component: {fileID: 3491899945964017961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Bounding Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
