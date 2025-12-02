@@ -3,7 +3,47 @@ guid: ef92ef64a139f994b803df1ccc01d73b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FilingCabinetCase
+    second: {fileID: 2100000, guid: e3c878d2d53d9be47ac1bb2bc421acdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FilingCabinetDrawers
+    second: {fileID: 2100000, guid: 6b94ccc3785d1154ab8ac3b43d1cbd65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallCrateCenter
+    second: {fileID: 2100000, guid: bec6286d165c6fe4f85636c4b7fd31fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallCrateEdge
+    second: {fileID: 2100000, guid: c0f6d5bfe015e8e4f8b9a063568d2ebc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TallCrateCenter
+    second: {fileID: 2100000, guid: c41c20cb6de155d49839f662344077c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TallCrateEdge
+    second: {fileID: 2100000, guid: 7b477200554781e4fa97a5b303f38943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TallDoubleCrateCenter
+    second: {fileID: 2100000, guid: c41c20cb6de155d49839f662344077c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TallDoubleCrateEdge
+    second: {fileID: 2100000, guid: b3e17ba48a7db8b4f9906cdde6457d67, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
